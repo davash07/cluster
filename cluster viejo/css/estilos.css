@@ -1,0 +1,171 @@
+.texto{
+    width: 400px;
+    margin-top: -1200px;
+}
+@font-face{
+  font-family:"Roboto";
+  src:url("../font/roboto/Roboto-Thin.ttf");
+  font-weight:200;
+  }
+  @font-face{
+    font-family:"Roboto";
+    src:url("../font/roboto/Roboto-Light.ttf");
+    font-weight:300;
+    }
+    @font-face{
+      font-family:"Roboto";
+      src:url("../font/roboto/Roboto-Regular.ttf");
+      font-weight:400;
+    }
+    @font-face{
+      font-family:"Roboto";
+      src:url("../font/roboto/Roboto-Medium.ttf");
+      font-weight:500;
+      }
+    @font-face{
+      font-family:"Roboto";
+      src:url("../font/roboto/Roboto-Bold.ttf");
+      font-weight:700;
+    }
+@font-face{
+    font-family:"Berlin Sans FB Demibold";
+    src:url('../font/Berlin Sans FB Demibold/Berlin Sans FB Demibold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/material_icons.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.lg img{
+    width: 80px;
+    height: 80px;
+}
+.lg{
+    float: right;
+    margin-top: -70px;
+    margin-right: 10px;
+    width: 80px;
+    height: 50px;
+}
+.lg img{
+    margin-top: ;
+    width: 80px;
+    height: 80px;
+}
+
+
+.cw{
+  font-size: 80px;
+  font-family:"Berlin Sans FB Demibold";
+    font-weight:;
+  color: rgb(10, 166, 150);
+  line-height: 1;
+  text-align:center;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.75);
+  margin-top: -0.8em;
+  width: 515px;
+  height: 90px;
+  }
+.ld{
+  font-size: 42.333px;
+  font-family: "Berlin Sans FB Demibold";
+  color: rgb(10, 166, 150);
+   line-height: 1;
+  text-align: center;
+  text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.75);
+  width: 376px;
+  height: 50px;
+    margin-top: -0.3em;
+  
+}
+
+nav a.button-collapse{
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.fuente>a{
+    font-family:"Roboto";
+    font-style: ;
+    font-size: 25px;
+    
+}
+#imag img{
+    height: 100px;
+}
+
+.fuente2>a{
+    font-family:"Roboto";
+    font-style: ;
+    font-size: 25px;
+    }
+#logos img{
+    height: 35px;
+}
+#logo{
+    height: 130px;
+    
+    margin-bottom:20px;
+      }
+#logo img{
+    width: ;
+    height: 130px;
+    margin-left:0.6em;
+   }
+#btnlm{
+    align-content: center;
+}
+#con{
+    color: #318bd9;
+}
+main{
+    margin-left: -10px;    
+}
+.iniciop{
+    margin-top: 60px;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+  }
+
+#menu>ul>li>a{
+    text-decoration: none;
+    padding:;
+    display: block;
+    }
+
+#girar>img{
+   transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition:transform 0.5s ease-out;
+}
+
+#menu>ul>li>ul{
+  display: none;
+}
+
+#menu>ul>li:hover>ul {
+  display:block;
+}
+footer{
+    height: 100%;
+}

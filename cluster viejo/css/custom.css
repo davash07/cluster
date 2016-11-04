@@ -1,0 +1,131 @@
+html {
+    font-style: solid;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+header {
+    text-align: center;
+   }
+header,
+main,
+footer {
+    padding-left: 240px;
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 25px
+}
+header .btn-floating {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    top: 58px;
+}
+
+header nav {
+    box-shadow: none;
+    width: 100%;
+}
+
+header nav ul li a {
+    position: relative;
+    color: #fff;
+    letter-spacing: -1px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.7rem;
+    }
+
+.button-collapse {
+    margin-left: 50px;
+}
+
+ul.side-nav.fixed a {
+    color: whitesmoke;
+}
+
+ul.side-nav.fixed a:hover {
+    color: #411416;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    padding: 2% 0 2% 0;
+}
+
+#inicio,
+#sectores,
+#contacto {
+    border-top: 8px solid rgba(0, 0, 0, 0.1);
+}
+
+section .col {
+    margin-bottom: 24px;
+}
+
+section h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+section hr {
+    width: 40px;
+    margin-bottom: 45px;
+    border: 1px solid
+}
+
+.inicio .inicio-holder {
+    clear: both;
+    text-align: center;
+}
+
+
+.inicio img {
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.sectores i {
+    color: #ee6e73;
+    font-size: 7rem;
+    display: block;
+}
+
+footer.page-footer {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/*** RESPONSIVO ***/
+
+@media only screen and (max-width: 992px) {
+    header ul.side-nav li a {
+        font-size: 1.7rem
+    }
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .portfolio img {
+        width: 100%;
+    }
+}
+.mrkditas{
+    color: gray;
+}
