@@ -11,7 +11,7 @@ var pkg = require('./package.json');
 
 var banner = ['/*!\n',
     ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+    ' * Copyright 2016-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
     ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
     ' */\n',
     ''
@@ -60,12 +60,12 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/jquery'))
 
     gulp.src([
-            'node_modules/font-awesome/**',
-            '!node_modules/font-awesome/**/*.map',
-            '!node_modules/font-awesome/.npmignore',
-            '!node_modules/font-awesome/*.txt',
-            '!node_modules/font-awesome/*.md',
-            '!node_modules/font-awesome/*.json'
+            'vendor/font-awesome/**',
+            '!vendor/font-awesome/**/*.map',
+            '!vendor/font-awesome/.npmignore',
+            '!vendor/font-awesome/*.txt',
+            '!vendor/font-awesome/*.md',
+            '!vendor/font-awesome/*.json'
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
 })
