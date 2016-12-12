@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-
 html, body {
   font-size: 62.5%;
   height: 100%;
@@ -527,3 +525,28 @@ input, button {
   }
 }
 
+.card-color{
+    background-color: #252427;
+    box-shadow: 2px 2px 5px #626262;
+}
+.text-card{
+    color: rgb(128, 124, 124);
+    box-shadow: 2px 2px 22px #Fff;
+    
+}
+.text-card:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 22px #Fff;
+}
+.nav-color{
+    background-color: rgb(255, 255, 255);
+}
+.font-detail{
+    font-size: 16px;
+}
+.top-list{
+   font-size:17px;
+}
+.alineacion{
+    margin-top:30px;
+}

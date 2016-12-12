@@ -1,153 +1,152 @@
-<!DOCTYPE html>
-<html ng-app="app">
-
+<html ng-app="MyApp">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Menu</title>
+	<title></title>
+  <!-- Angular Material style sheet -->
+  	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="../css/simple-sidebar.css" rel="stylesheet">
-    <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script> 
-    <script type="text/javascript" src="js/apifrebase.js"></script>
-</head>
-    <script>
-      	$(window).load(function() {
-		
-		$(".se-pre-con").fadeOut("low");;
-	});  
     
-    </script>
-<body ng-controller="appCtrl">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css">
+
+    </head>
+<body>
     <style>
-        svg{
-            width: 100px;
-            height: 100px;
-            margin: 20px;
-    display:inline-block;
-}
+        bod{
+            background-image: url(../img/fondo.jpg);
+            position: relative;
+            height: 100%;
+            background-size: cover;
+            overflow: auto;
+        }
+    
+    
     </style>
-       <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!---->
+    
 
+    <main >
+        <div class="container-fluid">
+        <section class="section">
           
-      <script>
-          
-        function dashboard(){
-            var url = "menu.html";
-            document.getElementById("iframe").src=url;
-        };
-        function users(){
-            var url = "modules/user/users.html";
-            document.getElementById("iframe").src=url;
-        };
-        function news(){
-            var url = "modules/new/news.html";
-            document.getElementById("iframe").src=url;
-        };
-        function events(){
-            var url = "modules/event/events.html";
-            document.getElementById("iframe").src=url;
-        };
-        function posts(){
-            var url = "modules/post/posts.html";
-            document.getElementById("iframe").src=url;
-        };
-        function classifieds(){
-            var url = "modules/classified/classifieds.html";
-            document.getElementById("iframe").src=url;
-        };
-          
-    </script>
-    <nav class="navbar no-margin nav-color" >
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
-            <i class="fa fa-bars"></i>
-        </button> 
-    </nav>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper"  style="margin-top:-20px">
-            <ul class="sidebar-nav nav-pills nav-stacked" id="menu" >
-               <div ng-repeat="value in DB" style="color:#fff" ><center>
-                    <img src="{{value.image}}" height="100px" width="100px" class="img-circle" ><br>
-                    <p>{{value.name}}</p>
-                   <!-- <p>{{value.email}}</p>-->
-                   <p>{{value.useradmin}}</p>
-                </center></div>
-                <li class="" >
-                    <a href="#" onclick="dashboard();" ><span class="fa-stack fa-lg pull-left"><i class="fa fa-tachometer fa-stack-1x "></i></span>Dashboard</a>  
-                </li>
+            <div class="row">
+                <!--Second column-->
                 
+                <div class="col-xs-6 col-xm-4 col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:rgba(98, 98, 98, 0.5)">
 
-               <li >
-                    <a href="#" onclick="users();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user-circle-o fa-stack-1x "></i></span> Usuarios</a>
-                </li>
-                <li>
-                    <a href="#" onclick="news();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> Noticias</a>
-                    
-                </li>
-                <li>
-                    <a href="#" onclick="posts();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-bookmark fa-stack-1x "></i></span> Publicaciones</a>
-                    
-                </li>
-                <li>
-                    <a href="#" onclick="events();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-calendar fa-stack-1x "></i></span>Eventos</a>
-                </li>
-                <li>
-                    <a href="#" onclick="classifieds();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-handshake-o fa-stack-1x "></i></span>Clasificados</a>
-                </li>
-                <li>
-                    <a href="#" onclick="logout()"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sign-out fa-stack-1x"></i></span> Logout</a>
-                </li>
-            </ul>
-        </div><!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper" style="margin-top:0px">
-            <div class="container-fluid ">
-                <!--
-                <div class="embed-responsive embed-responsive-21by9" style="min-height:690px;">
-                    <iframe id="iframe" class="embed-responsive-item"  src="meu.html" allowfullscreen></iframe>
-                </div>
-                -->
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="module/usuario/usuarios.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-user-circle-o"></i><br>Usuarios</h3></a>
+                                </center>
+                            </div>
+                        </div>
 
-            </div>
+                    </div>
+            <!--/.Card-->
                 </div>
+        <!--/Second column-->
+                <div class="col-xs-6 col-xm-4 col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:#626262">
+
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="modules/empresa/empresas.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-university"></i><br>Empresas</h3></a>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+            <!--/.Card-->
+                </div>
+                <!--/Second column-->
+                <div class="col-xs-6 col-xm-4  col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:#626262">
+
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="module/factura/facturas.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-newspaper-o"></i><br>Facturas</h3></a>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+            <!--/.Card-->
+                </div>
+        <!--Third column-->
+       <!--Second column-->
+                <div class="col-xs-6 col-xm-4 col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:#626262">
+
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="module/producto/productos.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-shopping-cart "></i><br>Productos</h3></a>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+            <!--/.Card-->
+                </div>
+        <!--/Second column-->
+                <div class="col-xs-6 col-xm-4 col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:#626262">
+
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="modules/sector/sectores.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-sitemap "></i><br>Sectores</h3></a>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+            <!--/.Card-->
+                </div>
+                <!--/Second column-->
+                <div class="col-xs-6 col-xm-4 col-md-4 mb-r">
+            <!--Card-->
+                    <div class="card-overlay" style="background-color:#626262">
+
+                <!--Content-->
+                        <div class="white-text text-xs-center">
+                            <div class="card-block card-color" style="height: 170px">
+                                <center>
+                                <a href="modules/sugerencia/sugerencias.html" class="text-card"><h3 style="font-size:40px"><i style="margin-top:30px; font-size:70px" class="fa fa-thumb-tack "></i><br>Sugerencias</h3></a>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+            <!--/.Card-->
+                </div>
+        <!--Third column-->
+            
             </div>
       
-
-    <!-- /#wrapper -->
-    <!-- jQuery -->
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+        </section>
     
-    <script src="https://use.fontawesome.com/5b3b0d1d00.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
-   
-    <script src="../js/sidebar_menu.js"></script>
-    <script src="https://use.fontawesome.com/5b3b0d1d00.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
-        <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
-    <!--<script>
-        var username = window.localStorage.getItem('');
-        if (!username) {
-            window.location.href = "./login.html";
-        }
-        function logout() {
-            window.localStorage.removeItem('');
-            window.location.href = "./login.html";
-        }
-</script>-->
-</body>
+  </div>
+    </main>
+    
 
+    <script src="../js/sidebar_menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/5b3b0d1d00.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
+  </body>
 </html>

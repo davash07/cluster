@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script> 
+    <script type="text/javascript" src="../js/apifirebase.js"></script>
+</head>
+    <script>
+      	$(window).load(function() {
+		
+		$(".se-pre-con").fadeOut("low");;
+	});  
+    
+    </script>
+<body ng-controller="appCtrl">
+    <style>
+        svg{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+    display:inline-block;
+}
+    </style>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+          
+      <script>
+          
+        function dashboard(){
+            var url = "menu.html";
+            document.getElementById("iframe").src=url;
+        };
+        function empresas(){
+            var url = "module/empresa/empresas.html";
+            document.getElementById("iframe").src=url;
+        };
+        function facturas(){
+            var url = "module/factura/facturas.html";
+            document.getElementById("iframe").src=url;
+        };
+        function productos(){
+            var url = "module/producto/productos.html";
+            document.getElementById("iframe").src=url;
+        };
+        function sectores(){
+            var url = "module/sector/sectores.html";
+            document.getElementById("iframe").src=url;
+        };
+        function sugerencias(){
+            var url = "module/segerencia/segerencias.html";
+            document.getElementById("iframe").src=url;
+        };
+        function usuarios(){
+            var url = "module/usuario/usuarios.html";
+            document.getElementById("iframe").src=url;
+        };
+          
+          
+    </script>
+    <nav class="navbar no-margin nav-color" >
+        <span> </span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </button> 
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper"  style="margin-top:-20px">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu" >
+               <div ng-repeat="value in DB" style="color:#fff" ><center>
+                    <img src="{{value.image}}" height="100px" width="100px" class="img-circle" ><br>
+                    <p>{{value.name}}</p>
+                   <!-- <p>{{value.email}}</p>-->
+                   <p>{{value.useradmin}}</p>
+                </center></div>
+                <li class="" >
+                    <a href="#" onclick="dashboard();" ><span class="fa-stack fa-lg pull-left"><i class="fa fa-tachometer fa-stack-1x "></i></span>Dashboard</a>  
+                </li>
+                
+
+               <li >
+                    <a href="#" onclick="usuarios();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user-circle-o fa-stack-1x "></i></span> Usuarios</a>
+                </li>
+                <li>
+                    <a href="#" onclick="empresas();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-university fa-stack-1x "></i></span> Empresas</a>
+                    
+                </li>
+                <li>
+                    <a href="#" onclick="facturas();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-newspaper-o fa-stack-1x "></i></span> Facturas</a>
+                    
+                </li>
+                <li>
+                    <a href="#" onclick="productos();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-shopping-cart fa-stack-1x "></i></span>Productos</a>
+                </li>
+                <li>
+                    <a href="#" onclick="sectores();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sitemap fa-stack-1x "></i></span>Sectores</a>
+                </li>
+                <li>
+                    <a href="#" onclick="sugerencias();"><span class="fa-stack fa-lg pull-left"><i class="fa fa-thumb-tack fa-stack-1x "></i></span>Sugerencias</a>
+                </li>
+                <li>
+                    <a href="#" onclick="logout()"><span class="fa-stack fa-lg pull-left"><i class="fa fa-sign-out fa-stack-1x"></i></span> Logout</a>
+                </li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper" style="margin-top:0px">
+            <div class="container-fluid ">
+                
+                <div class="embed-responsive embed-responsive-21by9" style="min-height:600px; max-height:700px">
+                    <iframe id="iframe" class="embed-responsive-item"  src="menu.html" allowfullscreen></iframe>
+                </div>
+            
+
+            </div>
+                </div>
+            </div>
+      
+
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="https://use.fontawesome.com/5b3b0d1d00.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
+   
+    <script src="../js/sidebar_menu.js"></script>
+    <script src="https://use.fontawesome.com/5b3b0d1d00.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
+    <!--<script>
+        var username = window.localStorage.getItem('');
+        if (!username) {
+            window.location.href = "./login.html";
+        }
+        function logout() {
+            window.localStorage.removeItem('');
+            window.location.href = "./login.html";
+        }
+</script>-->
+</body>
+
+</html>
